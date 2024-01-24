@@ -23,9 +23,13 @@ a {
 	text-decoration: none;
 }
 
-
+.logomarca{
+	color: #e5e0c7db;
+	font-size: 18pt;
+}
 /*Responsivo*/
 /*960PX BREAKPOINT*/
+
 @media (min-width:60em){
   .footer-diagonal svg         { width: calc(100% + 1.3px); height: 160px; }
   .main_footer .content        { padding: 2em 0; }

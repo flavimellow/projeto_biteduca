@@ -10,12 +10,23 @@
     <!-- Adicione seu próprio arquivo de estilo CSS personalizado, se necessário -->
     <link rel="stylesheet" href="inc/style.css">
 
+
+    <!-- Adicione seu próprio arquivo javascript, se necessário -->
+    <script>
+
+window.onload = function() {
+  document.getElementById('name').value = '';
+  }
+    </script>
 </head>
 <body>
 
 <!-- Barra de navegação Bootstrap -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
+        <div>
+           <span class="logomarca"><img src="img/logo.png" class= py-2 width="auto" height="100px"></span>
+        </div>
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,12 +51,12 @@
 <section id="home" class="py-5 text-center">
     <div class="container">
         <h1>TI Consultoria e Serviços</h1>
-        <img src="img/informatica.jpg" width="500" height="300">
+        <img src="img/informatica.jpg" class= py-2 width="500" height="300">
         <p>À medida que o tempo passa novas tecnologias vêm surgindo, o que impacta a vida das pessoas e, sobretudo, das empresas. Com o aparecimento de tantas novidades, empresários e gestores devem estar sempre atentos a implementá-las de forma eficaz. É justamente nesse momento que entram em destaque os benefícios que uma consultoria em TI pode proporcionar aos negócios.</p>
     </div>
 <div class="card-group">
     <div class="card">
-      <img src="img/imagem5.jpeg" class="card-img-top" style="width: 35rem;">
+      <img src="img/imagem5.jpeg" class="card-img-top" style="width: 30rem;">
       <div class="card-body">
         <h5 class="card-title">O que é consultoria de TI?</h5>
         <p class="card-text">Consultoria de TI é a terceirização de serviços estratégicos de TI, de forma que a empresa possa se beneficiar com especialidades técnicas específicas de Tecnologia da Informação. 
@@ -73,7 +84,7 @@
 </section>
 
 <!-- Seção Sobre -->
-<section id="about" class="py-5 text-center">
+<section id="about" class="py-2 text-center">
     <div class="container">
         <h2>O que é uma consultoria especializada em TI?</h2>
         <p>Basicamente, uma consultoria em TI é um serviço especializado que tem por objetivo fornecer suporte em diversas questões relacionadas à tecnologia. Nesse sentido, esses serviços incluem o auxílio no mapeamento de necessidades, planejamento de projetos e execução das estratégias utilizando ferramentas tecnológicas.
@@ -85,59 +96,33 @@
 <section id="contact" class="py-5">
     <div class="container">
         <h2 class="text-center">Entre em Contato</h2>
- <form action="https://formspree.io/flavimellow@gmail.com">
-    <method="POST">
+ <form action="https://formspree.io/f/xnqejvqv" method="POST">
         <div  class="py-1"class="form-group">
         <label>Nome</label>
-        <input type="text" name="name" class="form-control">
+        <input type="text" name="name" id="name" class="form-control" required>
     </div>
         <div class= "py-1" class="form-group">
         <label>Email</label>
-        <input type="email" name="email" class="form-control">
+        <input type="email" name="email" class="form-control" required>
     </div>
         <div class="py-2" class="form-group">
         <label>Mensagem</label>
         <textarea name="message" class="form-control" rows="5"></textarea>
     </div>
+        <input type='reset' value='Limpar todos os campos'/>
         <div class="form-group">
-        <input type="submit"  value="Enviar" class="btn btn-primary btn-lg">
+        <input type="submit"  value="Enviar" class="btn btn-light btn-lg" onClick="window.location.reload()">
+        <!-- apenas aprendizado <input type="submit"  value="Enviar" class="btn btn-light btn-lg" onClick="window.location.reload()"> -->
     </div>
 </div>
 </section>
  </form>
  
-
-
-
-
-<section id="contact" class="py-5">
-    <div class="container">
-        <h2 class="text-center">Entre em Contato</h2>
-        <form id="contactForm">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-        </form>
-    </div>
-</section>
-
-
-
 <!-- Adicione os scripts do Bootstrap e seu próprio script JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
- 
+
 </body>
 
 <footer>
